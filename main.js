@@ -1,3 +1,10 @@
+function scrollToSection(sectionId) {
+  const section = document.querySelector(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
 gsap.from(".main-text .line1", {
   opacity: 0,
   x: -100,
@@ -98,17 +105,25 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".about-me-content p", {
     opacity: 0,
     y: 30,
-    duration: 1.2,
+    duration: 0.7,
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".about-me-content p",
-      start: "50 50%",
-
-      scrub: 2,
+      start: "-200 60%",
+      // markers: true,
+      scrub: 1,
       toggleActions: "play none none reverse",
     },
   });
 });
+//adding functionality to nav menu
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
 //sec5 animations
 document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);

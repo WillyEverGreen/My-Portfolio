@@ -85,6 +85,24 @@ body {
   line-height: 0.9;
   font-weight: 200;
 }
+.nav-menu a {
+  color: inherit; /* Uses the default text color */
+  text-decoration: none; /* Removes the underline */
+}
+
+.nav-menu a:hover {
+  color: inherit; /* Ensures the color doesn't change on hover */
+  text-decoration: none;
+}
+
+.nav-menu a:visited {
+  color: inherit; /* Ensures visited links don't turn purple */
+}
+
+.nav-menu a:active {
+  color: inherit;
+}
+
 .bird {
   position: absolute;
   left: 58%;
@@ -95,6 +113,7 @@ body {
   font-size: 0.9vw;
   color: #f2e8cf;
   font-family: Kanit;
+  cursor: pointer;
 }
 .side-text {
   display: flex;
@@ -605,7 +624,7 @@ body {
   padding-top: 1vw;
 }
 .footer h3 {
-  border-bottom: 2px solid #ffbf35;
+  border-bottom: 2px solid #f2e8cf;
   padding-bottom: 10px;
   padding-top: 8vh;
   font-size: 2vw;
@@ -624,7 +643,7 @@ body {
   transition: 0.3s;
 }
 .footer ul li a:hover {
-  color: #ffbf35;
+  color: #f2e8cf;
 }
 .footer-icons a {
   margin-right: 10px;
@@ -633,7 +652,7 @@ body {
   transition: 0.3s;
 }
 .footer-icons a:hover {
-  color: #ffbf35;
+  color: #f2e8cf;
 }
 .feedback-form input,
 .feedback-form textarea {
@@ -645,7 +664,7 @@ body {
   outline: none;
 }
 .feedback-form button {
-  background-color: #ffbf35;
+  background-color: #f2e8cf;
 
   padding: 10px 15px;
   border: none;
